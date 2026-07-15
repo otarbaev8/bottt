@@ -38,14 +38,12 @@ aaaa = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
-<<<<<<< HEAD
 nnn = ReplyKeyboardMarkup(
     keyboard=[
         [ KeyboardButton(text='settings ⚙ '), KeyboardButton(text='observer ')],
     ],
     resize_keyboard=True
 )
-=======
 
 @dp.message(CommandStart())
 async def start(message: Message):
@@ -66,5 +64,4 @@ async def main():
 if __name__ == '__main__':
     asyncio.run(main())
 
->>>>>>> 87fe46ed3c4fabb95daa95546288f14650c8be74
 
