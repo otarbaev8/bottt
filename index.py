@@ -20,5 +20,13 @@ aaaa = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
+@dp.message(CommandStart)
+async def startt(message: Message):
+    await message.answer('Assalawma Aleykum!')
+async def main():
 
+    print("bot iske qosildi ✅")
+    await dp.start_polling(bot)
 
+if __name__ == '__main__':
+    asyncio.run(main())
