@@ -55,6 +55,12 @@ async def catalogg(message:Message):
     if t=='Katalog':
         await message.answer('Onimler kestesi',reply_markup=catalog)
 
+@dp.message()
+async def menu(message:Message):
+    n=message.text
+    if n=='menu':
+        await message.answer('nanana', reply_markup=menu)        
+
 
 async def main():
 
