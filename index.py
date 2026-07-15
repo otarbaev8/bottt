@@ -20,5 +20,10 @@ aaaa = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
-
+nnn = ReplyKeyboardMarkup(
+    keyboard=[
+        [ KeyboardButton(text='settings ⚙ '), KeyboardButton(text='observer ')],
+    ],
+    resize_keyboard=True
+)
 
